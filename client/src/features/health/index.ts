@@ -1,12 +1,17 @@
 import { fromEvent, merge, timer, from, of } from "rxjs";
-import { switchMap, map, distinctUntilChanged, catchError } from "rxjs/operators";
+import {
+  switchMap,
+  map,
+  distinctUntilChanged,
+  catchError,
+} from "rxjs/operators";
 import { ui } from "../../dom/selectors";
 
 const POLL_MS = 5000;
 
 const checkHealth = () =>
   from(
-    fetch("/health")
+    fetch("/api/health")
       .then((r) => r.ok)
       .catch(() => false),
   );
