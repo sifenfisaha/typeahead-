@@ -16,4 +16,5 @@ export const ui = {
   error: $<HTMLDivElement>("#search-error"),
   status: $<HTMLParagraphElement>("#search-status"),
   resultTemplate: $<HTMLTemplateElement>("#search-result-template"),
+  apiStatus: $<HTMLSpanElement>("#api-status"),
 };
