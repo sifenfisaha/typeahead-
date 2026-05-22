@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>rx-search</title>
+  </head>
+  <body>
+    <div id="app">
+      <main class="search-page">
+        <header class="search-header">
+          <h1>Country search</h1>
+          <p class="lede">Start typing to find a country.</p>
+        </header>
+
+        <div class="typeahead" id="typeahead">
+          <label for="search-input" class="visually-hidden">Search countries</label>
+
+          <div class="typeahead-field">
+            <svg class="typeahead-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+              <path
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M11 19a8 8 0 1 1 5.293-13.999A8 8 0 0 1 11 19Zm10 2-4.35-4.35"
+              />
+            </svg>
+
+            <input
+              id="search-input"
+              type="text"
+              class="typeahead-input"
+              role="combobox"
+              aria-expanded="false"
+              aria-autocomplete="list"
+              aria-controls="search-listbox"
+              aria-activedescendant=""
+              autocomplete="off"
+              autocorrect="off"
+              autocapitalize="off"
+              spellcheck="false"
+              placeholder="Search countries…"
+            />
+
+            <span
+              class="typeahead-spinner"
+              id="search-spinner"
+              role="progressbar"
+              aria-label="Searching"
+              hidden
+            ></span>
+
+            <button
+              type="button"
+              class="typeahead-clear"
+              id="search-clear"
+              aria-label="Clear search"
+              hidden
+            >
+              <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                <path
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  d="M6 6l12 12M18 6 6 18"
+                />
+              </svg>
+            </button>
+          </div>
+
+          <div class="typeahead-popover" id="search-popover" hidden>
+            <ul
+              id="search-listbox"
+              class="typeahead-listbox"
+              role="listbox"
+              aria-label="Search results"
+            ></ul>
+
+            <div class="typeahead-empty" id="search-empty" hidden>
+              No countries match your search.
+            </div>
+
+            <div class="typeahead-error" id="search-error" role="alert" hidden></div>
+          </div>
+        </div>
+
+        <p
+          class="typeahead-status visually-hidden"
+          id="search-status"
+          role="status"
+          aria-live="polite"
+        ></p>
+      </main>
+    </div>
+
+    <template id="search-result-template">
+      <li class="typeahead-option" role="option" aria-selected="false">
+        <div class="typeahead-option-row">
+          <span class="typeahead-option-name" data-name></span>
+          <span class="typeahead-option-category" data-category></span>
+        </div>
+        <p class="typeahead-option-description" data-description></p>
+      </li>
+    </template>
+
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>

@@ -1,0 +1,15 @@
+{
+  "name": "rx-search",
+  "private": true,
+  "version": "0.0.0",
+  "scripts": {
+    "dev": "pnpm -r --parallel run dev",
+    "dev:client": "pnpm --filter rx-search-client run dev",
+    "dev:server": "pnpm --filter rx-search-server run dev",
+    "build": "pnpm -r run build",
+    "start": "pnpm --filter rx-search-server run start"
+  },
+  "devDependencies": {
+    "typescript": "~6.0.2"
+  }
+}

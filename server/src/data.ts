@@ -1,0 +1,50 @@
+export type Country = {
+  id: number;
+  name: string;
+  region: string;
+  capital: string;
+};
+
+export const items: Country[] = [
+  { id: 1, name: "France", region: "Europe", capital: "Paris" },
+  { id: 2, name: "Germany", region: "Europe", capital: "Berlin" },
+  { id: 3, name: "Italy", region: "Europe", capital: "Rome" },
+  { id: 4, name: "Spain", region: "Europe", capital: "Madrid" },
+  { id: 5, name: "Portugal", region: "Europe", capital: "Lisbon" },
+  { id: 6, name: "United Kingdom", region: "Europe", capital: "London" },
+  { id: 7, name: "Ireland", region: "Europe", capital: "Dublin" },
+  { id: 8, name: "Netherlands", region: "Europe", capital: "Amsterdam" },
+  { id: 9, name: "Belgium", region: "Europe", capital: "Brussels" },
+  { id: 10, name: "Sweden", region: "Europe", capital: "Stockholm" },
+  { id: 11, name: "Norway", region: "Europe", capital: "Oslo" },
+  { id: 12, name: "Denmark", region: "Europe", capital: "Copenhagen" },
+  { id: 13, name: "Finland", region: "Europe", capital: "Helsinki" },
+  { id: 14, name: "Greece", region: "Europe", capital: "Athens" },
+  { id: 15, name: "Poland", region: "Europe", capital: "Warsaw" },
+  { id: 16, name: "United States", region: "Americas", capital: "Washington, D.C." },
+  { id: 17, name: "Canada", region: "Americas", capital: "Ottawa" },
+  { id: 18, name: "Mexico", region: "Americas", capital: "Mexico City" },
+  { id: 19, name: "Brazil", region: "Americas", capital: "Brasília" },
+  { id: 20, name: "Argentina", region: "Americas", capital: "Buenos Aires" },
+  { id: 21, name: "Chile", region: "Americas", capital: "Santiago" },
+  { id: 22, name: "Colombia", region: "Americas", capital: "Bogotá" },
+  { id: 23, name: "Peru", region: "Americas", capital: "Lima" },
+  { id: 24, name: "Japan", region: "Asia", capital: "Tokyo" },
+  { id: 25, name: "China", region: "Asia", capital: "Beijing" },
+  { id: 26, name: "India", region: "Asia", capital: "New Delhi" },
+  { id: 27, name: "South Korea", region: "Asia", capital: "Seoul" },
+  { id: 28, name: "Thailand", region: "Asia", capital: "Bangkok" },
+  { id: 29, name: "Vietnam", region: "Asia", capital: "Hanoi" },
+  { id: 30, name: "Indonesia", region: "Asia", capital: "Jakarta" },
+  { id: 31, name: "Philippines", region: "Asia", capital: "Manila" },
+  { id: 32, name: "Singapore", region: "Asia", capital: "Singapore" },
+  { id: 33, name: "Egypt", region: "Africa", capital: "Cairo" },
+  { id: 34, name: "South Africa", region: "Africa", capital: "Pretoria" },
+  { id: 35, name: "Kenya", region: "Africa", capital: "Nairobi" },
+  { id: 36, name: "Nigeria", region: "Africa", capital: "Abuja" },
+  { id: 37, name: "Morocco", region: "Africa", capital: "Rabat" },
+  { id: 38, name: "Ethiopia", region: "Africa", capital: "Addis Ababa" },
+  { id: 39, name: "Australia", region: "Oceania", capital: "Canberra" },
+  { id: 40, name: "New Zealand", region: "Oceania", capital: "Wellington" },
+  { id: 41, name: "Fiji", region: "Oceania", capital: "Suva" },
+];
